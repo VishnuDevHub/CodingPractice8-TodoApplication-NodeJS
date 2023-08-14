@@ -1,0 +1,32 @@
+###
+
+GET http://localhost:3000/todos/?status=IN%20PROGRESS&priority=HIGH&search_q=Play
+
+###
+
+GET http://localhost:3000/todos/1/
+
+###
+
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 15,
+  "todo": "Play Carrom",
+  "priority": "HIGH",
+  "status": "TO DO"
+}
+
+###
+
+PUT http://localhost:3000/todos/1/
+Content-Type: application/json
+
+{ "priority": "LOW" }
+
+###
+
+DELETE http://localhost:3000/todos/6/
+
+###
